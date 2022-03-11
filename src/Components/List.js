@@ -20,7 +20,7 @@ function List(props) {
         </thead>
         <tbody>
 
-          {data.data.map((obj,index) => {
+          {/* {data.data.map((obj,index) => {
             console.log("table-data", obj);
             return (
               <tr key={index}>
@@ -30,7 +30,7 @@ function List(props) {
                 <td>{obj.club}</td>
               </tr>
             );
-          })}
+          })} */}
         </tbody>
       </table>
     </div>

@@ -1,18 +1,34 @@
 import React from "react";
+import Card from "react-bootstrap/Card";
+import { Alert } from 'antd';
+
+import "./Card.css";
 
 function Counter({ ...obj }) {
-//   console.log(props);
+    console.log(obj.message);
   //Destructuring
-//   const { counting, color, message } = props;
-console.log(obj.message);
+  //   const { counting, color, message } = props;
+  console.log(obj);
   return (
-    <div>
-      <h1 style={{ color: obj.color }}>Counter is {obj.count}</h1>
+    <div className="Main Counter">
       <p>
         {obj.message
-          ? "counter is activated! (true)"
-          : "counter note activated(false)"}
+          ? <Alert message="Counter Successfully Incremented" style={{ width: "18rem" }} type="success" showIcon />
+          : null
+          }
       </p>
+      <Card border="primary" className="card text-center" style={{ width: "18rem" }}>
+        <Card.Body>
+          <Card.Title className="display">Counter</Card.Title>
+          <Card.Text>
+            <h1 className="display"  style={{ color: obj.color }}>{obj.count}</h1>
+          </Card.Text>
+        </Card.Body>
+      </Card>
+      {/* <h1 className="display-1" style={{ color: obj.color }}>
+        Counter = {obj.count}
+      </h1> */}
+      
     </div>
   );
 }

@@ -6,14 +6,26 @@ function Data() {
 
     const [data, setData] = useState([]);
 
-    axios.get("https://jsonplaceholder.typicode.com/users").then((response) => {
-        setData(response.data);
-      });
+    // let cancelToken;
+
+    // cancelToken = axios.cancelToken.source()
+
+    // axios.get("https://jsonplaceholder.typicode.com/users").then((response) => {
+    //     setData(response.data);
+    //     console.log('loadinggg',response.data);
+    //   });
+
+     
+
+
+   
+    
 
   return (
-    <div>
+    <div className='container'>
          <div className="row">
         {data.map((obj, index) => {
+          // console.log(obj,'userr dataaa')
           return (
             <div className="col-lg-4">
               <ListGroup as="ul">
