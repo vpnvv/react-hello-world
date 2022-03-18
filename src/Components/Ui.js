@@ -37,7 +37,7 @@ function Ui() {
       <Navbar bg="dark" variant="dark">
         <Container>
           <NavLink className='navclass' to="/">Pages</NavLink>
-          <Nav className="me-mx">
+          <Nav className="ml-auto">
             <NavLink className='navclass' to="/">Home</NavLink>
             <NavLink className='navclass' to="/about">About Us</NavLink>
             <NavLink className='navclass' to="/contact">Contact Us</NavLink>

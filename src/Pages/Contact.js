@@ -9,9 +9,7 @@ import swal from "sweetalert";
 
 function Contact() {
 
-  const value = useContext(MyContext)
 
-console.log('********', value);
 
   const sendEmail = (e) => {
     e.preventDefault();

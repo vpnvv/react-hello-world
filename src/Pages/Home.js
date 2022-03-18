@@ -16,7 +16,7 @@ function Home({ ...info }) {
   return (
     <div className="container">
       
-
+{/* 
       <table class="table table-primary table-hover table-striped ">
         <thead class="thead-dark">
           <tr>
@@ -40,7 +40,42 @@ function Home({ ...info }) {
             );
           })}
         </tbody>
-      </table>
+      </table> */}
+      <div className="row text-center">
+        <div className="col-md-6 col-lg-6 bg-primary">
+          <div className="title">
+            <h1 className="text-white text-center">WELCOME</h1>
+          </div>
+
+        </div>
+        <div className="col-md-6 col-lg-6 bg-dark">
+          <div className="image text-center">
+            <h1 className="text-white text-center">DETAILS</h1>
+          </div>
+        </div>
+      </div>
+
+      <br /><br /><br /><br />
+
+      <div className="row">
+        <div className="col-md-12 text-center bg-warning">
+          <h1>About us</h1>
+         
+        </div>
+      </div>
+
+      <br /><br />
+
+      <div className="row">
+        <div className="col-md-6 text-center">
+          <h1>DETAILS</h1>
+        </div>
+        <div className="col-md-6 text-center">
+          <h1>EDUCATION DETAILS</h1>
+        </div>
+      </div>
+
+
     </div>
   );
 }

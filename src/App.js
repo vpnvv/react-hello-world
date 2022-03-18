@@ -24,6 +24,7 @@ import Goal from "./Components/Goal";
 import Contact from "./Pages/Contact";
 import Home from "./Pages/Home";
 import { Alert, message } from 'antd';
+import UserDetails from "./Pages/UserDetails";
 
 
 
@@ -103,7 +104,7 @@ function App() {
 
   const [page, setPage] = useState('about')
 
-  console.log(page);
+  
 
   let component
   if(page==='about'){
@@ -137,7 +138,6 @@ function App() {
 //  }, [count]) // dependemcy - 2nd argument //UPDATING
  
 
-const MyContext = createContext();
 
 
 
@@ -206,12 +206,8 @@ const MyContext = createContext();
       } */}
 
 
-<MyContext.Provider value={100}>
-  <Home/>
-  <About/>
-  <Contact/>
 
-</MyContext.Provider>
+
       
 
 
@@ -223,6 +219,7 @@ const MyContext = createContext();
         <Route path="/about" element={<About/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/counter" element={<Counter/>}/>
+        <Route path="/details/:id" element={<UserDetails/>}/>
       
 
     </Routes>
