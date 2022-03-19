@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import List from "../Components/List";
+import Usage from "./Usage";
 
 function Home({ ...info }) {
   // const [data, setData] = useState([]);
@@ -65,7 +66,7 @@ function Home({ ...info }) {
       </div>
 
       <br /><br />
-
+{/* 
       <div className="row">
         <div className="col-md-6 text-center">
           <h1>DETAILS</h1>
@@ -73,7 +74,9 @@ function Home({ ...info }) {
         <div className="col-md-6 text-center">
           <h1>EDUCATION DETAILS</h1>
         </div>
-      </div>
+      </div> */}
+
+      <Usage/>
 
 
     </div>

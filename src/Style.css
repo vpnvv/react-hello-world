@@ -23,7 +23,7 @@ button{
 }
 
 button:hover{
-    background-color: black;
+    background-color: rgb(187, 187, 187);
     border-color: black;
     color: white;
 }

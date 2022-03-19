@@ -8,9 +8,7 @@ import swal from "sweetalert";
 
 
 function Contact() {
-
-
-
+  
   const sendEmail = (e) => {
     e.preventDefault();
 
